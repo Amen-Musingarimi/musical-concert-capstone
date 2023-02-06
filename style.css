@@ -17,9 +17,9 @@ a:active {
 
 :root {
   --color-white: #fff;
-  --color-black: #000;
-  --color-red: #fc0a0a;
-  --color-gray: #cac5c5;
+  --color-black: #272a31;
+  --color-red: #ec5242;
+  --color-gray: #d3d3d3;
   --transition: all 400ms ease;
 }
 
@@ -97,24 +97,127 @@ h1 {
   margin-bottom: 12px;
 }
 
+.hide {
+  display: none;
+}
+
+/* ---------------------Mobile Navigation Menu---------------------------- */
+.mobileOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 28px;
+  opacity: 0.95;
+  background-color: var(--color-gray);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.mobileMenuFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-link-item {
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .closeModalBtn {
-  display: none;
+  color: var(--color-black);
+  font-size: 24px;
 }
 
-.nav-socials {
-  display: none;
+.menuContainer > ul > li {
+  margin-bottom: 20px;
 }
 
-.nav-bar {
-  display: none;
+.program-section {
+  background-image: url(images/main-program-bckg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+}
+
+/* ------------------------------------------Styling the Program Section------------------------------- */
+.programeCard-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 12px;
+}
+
+.programHeading {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.hrElement {
+  border: 1px solid var(--color-red);
+  width: 80px;
+  margin-bottom: 12px;
+}
+
+.program-articles {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.programArticle {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  background-color: #cac5c523;
+  gap: 5px;
+  padding: 10px;
+}
+
+.programIcon {
+  font-size: 30px;
+  color: var(--color-white);
+}
+
+.programTitle {
+  color: var(--color-red);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.programDescription {
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+.seeProgramLink {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-size: 14px;
 }
 
 /* ------------------------------------Media Queries----------------------------------- */
 
 @media all and (min-width: 768px) {
   /* ------------------------------------------styling the Nav bar------------------------------- */
-  .mobile-nav-button {
+  .closeModalBtn {
     display: none;
+  }
+
+  .openModal {
+    display: none;
+  }
+
+  .menuContainer {
+    display: block;
+  }
+
+  .menuContainer > ul > li {
+    margin-bottom: 0;
   }
 
   .nav-socials {
@@ -134,6 +237,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 4px 142px;
+    align-items: center;
   }
 
   .logo-img {
@@ -149,6 +253,11 @@ h1 {
 
   .about {
     color: var(--color-red);
+  }
+
+  .nav-link-item {
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .nav-link-item:hover {
@@ -178,5 +287,25 @@ h1 {
 
   .home-paragraph {
     width: 60%;
+  }
+
+  /* ------------------------------------------Styling the Program Section------------------------------- */
+  .programeCard-wrapper {
+    padding: 80px 142px;
+  }
+
+  .program-articles {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .programArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .programDescription {
+    text-align: center;
   }
 }

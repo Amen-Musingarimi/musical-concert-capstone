@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <ul class="nav-socials">
+      <ul class="nav-socials hide">
         <li>
           <a
             href="https://www.facebook.com/profile.php?id=100008430154593"
@@ -51,18 +51,20 @@
           ><i class="fa-solid fa-bars mobile-nav-button"></i
         ></a>
       </div>
-      <nav class="nav-bar">
+      <nav class="nav-bar hide">
         <a href="#"><img src="images/mylogo.png" class="logo-img" /></a>
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link-item about">About</a></li>
-          <li><a href="program" class="nav-link-item">Program</a></li>
-          <li><a href="artists" class="nav-link-item">Artists</a></li>
-          <li><a href="sponsors" class="nav-link-item">Sponsors</a></li>
-          <li><a href="#tickets" class="nav-link-item">Buy a ticket</a></li>
-        </ul>
-        <a href="#" class="hide"
-          ><i class="fa-solid fa-xmark closeModalBtn"></i
-        ></a>
+        <div class="menuContainer hide">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link-item about">About</a></li>
+            <li><a href="program" class="nav-link-item">Program</a></li>
+            <li><a href="artists" class="nav-link-item">Artists</a></li>
+            <li><a href="sponsors" class="nav-link-item">Sponsors</a></li>
+            <li><a href="#tickets" class="nav-link-item">Buy a ticket</a></li>
+          </ul>
+          <a href="#" class="closeModalBtn"
+            ><i class="fa-solid fa-xmark hide"></i
+          ></a>
+        </div>
       </nav>
     </header>
     <!-- ------------------------------------The Home Page-------------------------------------- -->
@@ -83,6 +85,65 @@
         <p class="home-concert-venue">
           @Victoria Falls International Art Center
         </p>
+      </div>
+    </section>
+    <!-- ---------------------------------The Program Section-------------------------------- -->
+    <section class="program-section" id="program">
+      <div class="programeCard-wrapper">
+        <h2 class="programHeading">Main Program</h2>
+        <hr class="hrElement" />
+        <div class="program-articles">
+          <article class="programArticle">
+            <span class="programIcon"
+              ><i class="fa-solid fa-handshake"></i
+            ></span>
+            <h3 class="programTitle">Speeches</h3>
+            <p class="programDescription">
+              Your favourite artists will deliver short speeches on topics given
+              to them.
+            </p>
+          </article>
+          <article class="programArticle">
+            <span class="programIcon"
+              ><i class="fa-solid fa-handshake"></i
+            ></span>
+            <h3 class="programTitle">Lunch</h3>
+            <p class="programDescription">
+              Get opportunity to try out diffrent food from around the world.
+            </p>
+          </article>
+          <article class="programArticle">
+            <span class="programIcon"
+              ><i class="fa-solid fa-handshake"></i
+            ></span>
+            <h3 class="programTitle">Meet and Greet</h3>
+            <p class="programDescription">
+              Meet and Greet with some of the biggest artists from around the
+              world.
+            </p>
+          </article>
+          <article class="programArticle">
+            <span class="programIcon"
+              ><i class="fa-solid fa-handshake"></i
+            ></span>
+            <h3 class="programTitle">Culture Exibition</h3>
+            <p class="programDescription">
+              Appreciate various cultures from across the globe exibited to you
+              by artists.
+            </p>
+          </article>
+          <article class="programArticle">
+            <span class="programIcon"
+              ><i class="fa-solid fa-handshake"></i
+            ></span>
+            <h3 class="programTitle">Live Performances</h3>
+            <p class="programDescription">
+              Enjoy your favourite artists from various conties and genres
+              perfome live.
+            </p>
+          </article>
+        </div>
+        <a href="#" class="seeProgramLink">SEE THE WHOLE PROGRAM</a>
       </div>
     </section>
     <script src="script.js"></script>
