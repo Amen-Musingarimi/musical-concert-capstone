@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  cursor: pointer;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #fc0a0a;
+  --color-gray: #cac5c5;
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+/* ------------------------------------------styling the Nav bar------------------------------- */
+.mobile-nav-wrapper {
+  background-color: #bdbdbd;
+}
+
+.mobile-nav-button {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.nav-link-item {
+  color: var(--color-black);
+  transition: var(--transition);
+}
+
+/* ------------------------------------Styling the Home page----------------------------------- */
+.home-page {
+  background-image: url(images/homeBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  /* min-height: 100vh; */
+}
+
+.home-page-wrapper {
+  padding: 24px;
+  padding-bottom: 50px;
+  background-color: var(--color-white);
+  opacity: 0.7;
+}
+
+.h2-main-heading,
+h1 {
+  color: var(--color-red);
+}
+
+.h2-main-heading {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.home-paragraph {
+  color: var(--color-black);
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 12px;
+  border: 2px solid #ece9e9;
+  margin-bottom: 12px;
+}
+
+.home-concert-date {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.closeModalBtn {
+  display: none;
+}
+
+.nav-socials {
+  display: none;
+}
+
+.nav-bar {
+  display: none;
+}
+
+/* ------------------------------------Media Queries----------------------------------- */
+
+@media all and (min-width: 768px) {
+  /* ------------------------------------------styling the Nav bar------------------------------- */
+  .mobile-nav-button {
+    display: none;
+  }
+
+  .nav-socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: var(--color-black);
+    padding: 12px 142px;
+  }
+
+  .nav-socials-link {
+    color: var(--color-white);
+  }
+
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 4px 142px;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+
+  .about {
+    color: var(--color-red);
+  }
+
+  .nav-link-item:hover {
+    color: gray;
+  }
+
+  .nav-link-item:active {
+    color: var(--color-red);
+    padding: 12px;
+    border: 1px solid var(--color-red);
+  }
+
+  /* ------------------------------------Styling the Home page----------------------------------- */
+
+  .home-page-wrapper {
+    padding: 80px 142px;
+  }
+
+  .h2-main-heading {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  .home-paragraph {
+    width: 60%;
+  }
+}
