@@ -20,6 +20,7 @@ a:active {
   --color-black: #272a31;
   --color-red: #ec5242;
   --color-gray: #d3d3d3;
+  --color-gray-dark: #adadad;
   --transition: all 400ms ease;
 }
 
@@ -200,6 +201,290 @@ h1 {
   font-size: 14px;
 }
 
+/* ------------------------------------Styling the Featured Artists Section-------------------------------- */
+
+.sectionHeading {
+  color: var(--color-black);
+  text-align: center;
+}
+
+.artistsCards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.artist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.artistImage {
+  width: 150px;
+  height: 150px;
+}
+
+.artistTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.artistName {
+  color: var(--color-black);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.artistBio {
+  color: var(--color-red);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.artistHr {
+  border: 1px solid var(--color-gray);
+  width: 50px;
+}
+
+.artistDescription {
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.moreArtistsLink {
+  color: var(--color-black);
+  font-weight: 600;
+  border: 2px solid var(--color-gray);
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.mrgnLft {
+  margin-left: 8px;
+  color: var(--color-red);
+}
+
+/* ------------------------------------------Styling the Partners Section------------------------------- */
+.partnersSection {
+  background-color: var(--color-black);
+}
+
+.partnerSectionHeading {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.partnersNames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.partnerName {
+  color: var(--color-gray-dark);
+  font-weight: 800;
+}
+
+/* ------------------------------------------Styling the Footer------------------------------- */
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footerImage {
+  height: 50px;
+}
+
+.footerTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footerText {
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hiddenPassage {
+  display: none;
+}
+
+/* ------------------------------------------Styling the About page------------------------------- */
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  padding-bottom: 50px;
+  background-color: var(--color-gray);
+  opacity: 0.9;
+}
+
+.mainH1 {
+  text-align: center;
+}
+
+.aboutHomePassage {
+  background-color: var(--color-white);
+  opacity: 1;
+  border: 1px solid var(--color-gray-dark);
+  margin: 0 24px;
+}
+
+.aboutPmessage,
+.abtLogoDescription {
+  text-align: center;
+  color: var(--color-black);
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 12px;
+  padding-bottom: 0;
+}
+
+.aboutEmail {
+  text-align: center;
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 12px;
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+
+.whiteBgWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 24px;
+  padding-bottom: 50px;
+  background-color: var(--color-white);
+}
+
+.headingCenter {
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--color-black);
+  padding: 0 50px;
+}
+
+.abtHr {
+  text-align: center;
+}
+
+.abtLogoDescription {
+  margin-bottom: 24px;
+}
+
+.abtLogoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-gray);
+  width: 90%;
+  margin: 0 24px;
+}
+
+.abtLogiImg {
+  padding: 20px;
+}
+
+.pastConcerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 20px;
+  border-top: 2px solid var(--color-gray);
+  background-color: var(--color-white);
+}
+
+.concerts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 90%;
+}
+
+.firstConcert {
+  background-image: url('images/ross.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.secondConcert {
+  background-image: url('images/jah.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.orangeBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px;
+  background-color: var(--color-red);
+  opacity: 0.7;
+}
+
+.pastConcertText {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.concertYear {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.concertVenue {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.abtPartners,
+.abtFooter {
+  width: 100%;
+}
+
 /* ------------------------------------Media Queries----------------------------------- */
 
 @media all and (min-width: 768px) {
@@ -307,5 +592,64 @@ h1 {
 
   .programDescription {
     text-align: center;
+  }
+
+  /* ---------------------------------------Styling the Artists Section----------------------------- */
+  .artistsCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .moreArtistsLink {
+    display: none;
+  }
+
+  /* ------------------------------------------Styling the Partners Section------------------------------- */
+
+  .partnersNames {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .row1,
+  .row2 {
+    gap: 100px;
+  }
+
+  /* ------------------------------------------Styling the Footer------------------------------- */
+  .footerContainer {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .firstFooterText {
+    display: flex;
+    gap: 6px;
+  }
+
+  .footerTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hiddenPassage {
+    display: block;
+  }
+
+  /* ------------------------------------------Styling the About page------------------------------- */
+
+  .abtLogoDiv {
+    width: 40%;
+  }
+
+  .concerts {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 90%;
   }
 }

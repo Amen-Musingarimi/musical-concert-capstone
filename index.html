@@ -52,14 +52,26 @@
         ></a>
       </div>
       <nav class="nav-bar hide">
-        <a href="#"><img src="images/mylogo.png" class="logo-img" /></a>
+        <a href="#home"><img src="images/mylogo.png" class="logo-img" /></a>
         <div class="menuContainer hide">
           <ul class="nav-links">
-            <li><a href="#about" class="nav-link-item about">About</a></li>
-            <li><a href="program" class="nav-link-item">Program</a></li>
-            <li><a href="artists" class="nav-link-item">Artists</a></li>
-            <li><a href="sponsors" class="nav-link-item">Sponsors</a></li>
-            <li><a href="#tickets" class="nav-link-item">Buy a ticket</a></li>
+            <li>
+              <a href="pages/about.html" class="menuLink nav-link-item about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#program" class="menuLink nav-link-item">Program</a>
+            </li>
+            <li>
+              <a href="#artists" class="menuLink nav-link-item">Artists</a>
+            </li>
+            <li>
+              <a href="#partners" class="menuLink nav-link-item">Partners</a>
+            </li>
+            <li>
+              <a href="#tickets" class="menuLink nav-link-item">Buy a ticket</a>
+            </li>
           </ul>
           <a href="#" class="closeModalBtn"
             ><i class="fa-solid fa-xmark hide"></i
@@ -68,7 +80,7 @@
       </nav>
     </header>
     <!-- ------------------------------------The Home Page-------------------------------------- -->
-    <section class="home-page">
+    <section id="home" class="home-page">
       <div class="home-page-wrapper">
         <h2 class="h2-main-heading">Hello, Music Lovers!</h2>
         <h1>
@@ -146,6 +158,56 @@
         <a href="#" class="seeProgramLink">SEE THE WHOLE PROGRAM</a>
       </div>
     </section>
+    <!-- ---------------------------------The Artists Section-------------------------------- -->
+    <section id="artists" class="artistsSection">
+      <div class="programeCard-wrapper">
+        <h2 class="sectionHeading">Featured Artists</h2>
+        <hr class="hrElement" />
+        <div class="artistsCards"></div>
+        <a href="#" class="moreArtistsLink"
+          >MORE<i class="fa-solid fa-angle-down mrgnLft"></i
+        ></a>
+      </div>
+    </section>
+    <!-- -----------------------------The Partners Section------------------------------ -->
+    <section id="partners" class="partnersSection">
+      <div class="programeCard-wrapper">
+        <h2 class="partnerSectionHeading">Partners</h2>
+        <hr class="hrElement" />
+        <div class="partnersNames">
+          <div class="row1">
+            <h3 class="partnerName">Econet</h3>
+            <h3 class="partnerName">Sakunda</h3>
+            <h3 class="partnerName">Old Mutual</h3>
+          </div>
+          <div class="row2">
+            <h3 class="partnerName">Toyota</h3>
+            <h3 class="partnerName">Gtel</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="programeCard-wrapper">
+        <div class="footerContainer">
+          <img
+            src="images/mylogo.png"
+            alt="Image showing AT Music logo"
+            class="footerImage"
+          />
+          <div class="footerTextContainer">
+            <div class="firstFooterText">
+              <p class="footerText">2023 Amen T Music.</p>
+              <p class="footerText">Some Rights Reserved.</p>
+            </div>
+            <p class="footerText hiddenPassage">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus, qui perferendis incidunt quod nulla quibusdam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
