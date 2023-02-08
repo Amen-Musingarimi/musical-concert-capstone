@@ -7,31 +7,31 @@ const navLinks = document.querySelectorAll('.menuLink');
 const body = document.querySelector('.body');
 
 btnOpenModal.addEventListener('click', () => {
+  body.classList.add('noScroll');
   navMenu.classList.remove('hide');
   modalMenu.classList.remove('hide');
   home.classList.add('hide');
   modalMenu.classList.add('mobileOverlay', 'mobileMenuFlex');
   navLinks.classList.add('menuItemsMargin');
-  body.classList.add('noScroll');
 });
 
 btnCloseModalBtn.addEventListener('click', () => {
+  body.classList.remove('noScroll');
   navMenu.classList.add('hide');
   modalMenu.classList.add('hide');
   home.classList.remove('hide');
   modalMenu.classList.remove('mobileOverlay', 'mobileMenuFlex');
   navLinks.classList.remove('menuItemsMargin');
-  body.classList.remove('noScroll');
 });
 
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', () => {
+    body.classList.remove('noScroll');
     navMenu.classList.add('hide');
     modalMenu.classList.add('hide');
     home.classList.remove('hide');
     modalMenu.classList.remove('mobileOverlay', 'mobileMenuFlex');
     navLinks.classList.remove('menuItemsMargin');
-    body.classList.remove('noScroll');
   });
 }
 
