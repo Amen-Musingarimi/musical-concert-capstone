@@ -33,6 +33,10 @@ body {
   position: relative;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 /* ------------------------------------------styling the Nav bar------------------------------- */
 .mobile-nav-wrapper {
   background-color: #bdbdbd;
@@ -214,11 +218,11 @@ h1 {
 
 .buyTicketBtn {
   color: var(--color-white);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   background-color: var(--color-red);
   border: none;
-  padding: 20px 60px;
+  padding: 25px 100px;
   transition: var(--transition);
 }
 
@@ -538,6 +542,25 @@ h1 {
 
   .menuContainer > ul > li {
     margin-bottom: 0;
+  }
+
+  .aboutNavSocials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    padding: 12px 142px 12px 12px;
+  }
+
+  .aboutSocialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  .aboutBackLink {
+    color: var(--color-white);
   }
 
   .nav-socials {

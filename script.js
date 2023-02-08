@@ -4,6 +4,7 @@ const home = document.querySelector('.home-page');
 const navMenu = document.querySelector('.nav-bar');
 const modalMenu = document.querySelector('.menuContainer');
 const navLinks = document.querySelectorAll('.menuLink');
+const body = document.querySelector('.body');
 
 btnOpenModal.addEventListener('click', () => {
   navMenu.classList.remove('hide');
@@ -11,6 +12,7 @@ btnOpenModal.addEventListener('click', () => {
   home.classList.add('hide');
   modalMenu.classList.add('mobileOverlay', 'mobileMenuFlex');
   navLinks.classList.add('menuItemsMargin');
+  body.classList.add('noScroll');
 });
 
 btnCloseModalBtn.addEventListener('click', () => {
@@ -19,6 +21,7 @@ btnCloseModalBtn.addEventListener('click', () => {
   home.classList.remove('hide');
   modalMenu.classList.remove('mobileOverlay', 'mobileMenuFlex');
   navLinks.classList.remove('menuItemsMargin');
+  body.classList.remove('noScroll');
 });
 
 for (let i = 0; i < navLinks.length; i += 1) {
@@ -28,6 +31,7 @@ for (let i = 0; i < navLinks.length; i += 1) {
     home.classList.remove('hide');
     modalMenu.classList.remove('mobileOverlay', 'mobileMenuFlex');
     navLinks.classList.remove('menuItemsMargin');
+    body.classList.remove('noScroll');
   });
 }
 

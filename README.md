@@ -135,7 +135,7 @@ If you like this project then don't forget to give a star ⭐ on this repository
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding partners, [Cindy Shin](https://www.behance.net/adagio07), the author of the original [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+I would like to thank [Cindy Shin](https://www.behance.net/adagio07), the author of the original [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,6 +143,6 @@ I would like to thank my coding partners, [Cindy Shin](https://www.behance.net/a
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
