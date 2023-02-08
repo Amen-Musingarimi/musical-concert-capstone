@@ -75,13 +75,9 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need any code editor, for example Visual Studio.
-
 ### Setup
 
-Clone this repository to your desired folder
+Clone this repository to your desired folder using the following command; git clone https://github.com/Amen-Musingarimi/musical-concert-capstone.git
 
 ### Run tests
 
@@ -97,7 +93,7 @@ You can deploy this project using Github pages.
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Amen Musingarimi**
 
 - GitHub: [@Amen-Musingarimi](https://github.com/Amen-Musingarimi)
 - Twitter: [@Amen-Musingarimi](https://twitter.com/Amen-Musingarimi)
@@ -131,7 +127,7 @@ Feel free to check the [issues page](https://github.com/Amen-Musingarimi/musical
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project then don't forget to give a star ⭐ on this repository.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +135,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding partners, Lorna Kaboro and Kodjo Senou.
+I would like to thank my coding partners, [Cindy Shin](https://www.behance.net/adagio07), the author of the original [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,6 +143,6 @@ I would like to thank my coding partners, Lorna Kaboro and Kodjo Senou.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
