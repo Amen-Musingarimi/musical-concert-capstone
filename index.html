@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/8b2919a184.js"
@@ -70,7 +88,9 @@
               <a href="#partners" class="menuLink nav-link-item">Partners</a>
             </li>
             <li>
-              <a href="#tickets" class="menuLink nav-link-item">Buy a ticket</a>
+              <a href="#tickets" class="menuLink nav-link-item ticket"
+                >Buy A Ticket</a
+              >
             </li>
           </ul>
           <a href="#" class="closeModalBtn"
@@ -83,11 +103,13 @@
     <section id="home" class="home-page">
       <div class="home-page-wrapper">
         <h2 class="h2-main-heading">Hello, Music Lovers!</h2>
+
         <h1>
-          MUSIC AND ARTS FESTIVAL <br />
-          VICTORIA FALLS <br />
-          2023!
+          <span class="gradient">MUSIC AND ARTS FESTIVAL</span> <br />
+          <span class="gradient"> VICTORIA FALLS</span> <br />
+          <span class="gradient">2023</span>
         </h1>
+
         <p class="home-paragraph">
           A joyful celebration in the value of openness and sharing, creating a
           positive change with people from over 80 contries is taking place in
@@ -107,7 +129,7 @@
         <div class="program-articles">
           <article class="programArticle">
             <span class="programIcon"
-              ><i class="fa-solid fa-handshake"></i
+              ><i class="fa-solid fa-microphone"></i
             ></span>
             <h3 class="programTitle">Speeches</h3>
             <p class="programDescription">
@@ -117,7 +139,7 @@
           </article>
           <article class="programArticle">
             <span class="programIcon"
-              ><i class="fa-solid fa-handshake"></i
+              ><i class="fa-solid fa-utensils"></i
             ></span>
             <h3 class="programTitle">Lunch</h3>
             <p class="programDescription">
@@ -136,7 +158,7 @@
           </article>
           <article class="programArticle">
             <span class="programIcon"
-              ><i class="fa-solid fa-handshake"></i
+              ><i class="fa-solid fa-earth-africa"></i
             ></span>
             <h3 class="programTitle">Culture Exibition</h3>
             <p class="programDescription">
@@ -145,9 +167,7 @@
             </p>
           </article>
           <article class="programArticle">
-            <span class="programIcon"
-              ><i class="fa-solid fa-handshake"></i
-            ></span>
+            <span class="programIcon"><i class="fa-solid fa-music"></i></span>
             <h3 class="programTitle">Live Performances</h3>
             <p class="programDescription">
               Enjoy your favourite artists from various conties and genres
@@ -156,6 +176,7 @@
           </article>
         </div>
         <a href="#" class="seeProgramLink">SEE THE WHOLE PROGRAM</a>
+        <button type="button" class="buyTicketBtn">Get A Ticket</button>
       </div>
     </section>
     <!-- ---------------------------------The Artists Section-------------------------------- -->
@@ -164,8 +185,11 @@
         <h2 class="sectionHeading">Featured Artists</h2>
         <hr class="hrElement" />
         <div class="artistsCards"></div>
-        <a href="#" class="moreArtistsLink"
+        <a href="javascript:void(0)" class="moreArtistsLink"
           >MORE<i class="fa-solid fa-angle-down mrgnLft"></i
+        ></a>
+        <a href="javascript:void(0)" class="lessArtistsLink hide"
+          >SEE LESS<i class="fa-solid fa-angle-up mrgnLft"></i
         ></a>
       </div>
     </section>

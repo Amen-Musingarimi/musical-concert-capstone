@@ -45,7 +45,19 @@ body {
 
 .nav-link-item {
   color: var(--color-black);
+  font-weight: 600;
+  font-size: 20px;
   transition: var(--transition);
+}
+
+.ticket {
+  color: var(--color-red);
+  border: 2px solid var(--color-red);
+  padding: 6px;
+}
+
+.ticket:hover {
+  background-color: var(--color-gray);
 }
 
 /* ------------------------------------Styling the Home page----------------------------------- */
@@ -54,7 +66,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 100vw;
-  /* min-height: 100vh; */
 }
 
 .home-page-wrapper {
@@ -67,6 +78,12 @@ body {
 .h2-main-heading,
 h1 {
   color: var(--color-red);
+}
+
+.gradient {
+  background: linear-gradient(red, orange);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .h2-main-heading {
@@ -87,7 +104,7 @@ h1 {
   font-size: 14px;
   line-height: 1.5;
   padding: 12px;
-  border: 2px solid #ece9e9;
+  border: 1px solid #e1d9d1;
   margin-bottom: 12px;
 }
 
@@ -118,12 +135,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.nav-link-item {
-  color: var(--color-black);
-  font-weight: 600;
-  font-size: 20px;
 }
 
 .closeModalBtn {
@@ -167,7 +178,6 @@ h1 {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   gap: 12px;
-  margin-bottom: 40px;
 }
 
 .programArticle {
@@ -196,9 +206,30 @@ h1 {
 }
 
 .seeProgramLink {
+  display: none;
   color: var(--color-white);
   text-decoration: underline;
   font-size: 14px;
+}
+
+.buyTicketBtn {
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--color-red);
+  border: none;
+  padding: 20px 60px;
+  transition: var(--transition);
+}
+
+.buyTicketBtn :hover {
+  color: var(--color-red);
+  background-color: var(--color-gray);
+}
+
+.buyTicketBtn :active {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* ------------------------------------Styling the Featured Artists Section-------------------------------- */
@@ -257,7 +288,8 @@ h1 {
   font-weight: normal;
 }
 
-.moreArtistsLink {
+.moreArtistsLink,
+.lessArtistsLink {
   color: var(--color-black);
   font-weight: 600;
   border: 2px solid var(--color-gray);
@@ -356,6 +388,10 @@ h1 {
   text-align: center;
 }
 
+.homeAbtHr {
+  margin-bottom: 30px;
+}
+
 .aboutHomePassage {
   background-color: var(--color-white);
   opacity: 1;
@@ -392,7 +428,6 @@ h1 {
   background-color: var(--color-white);
   padding: 24px;
   padding-bottom: 50px;
-  background-color: var(--color-white);
 }
 
 .headingCenter {
@@ -536,10 +571,6 @@ h1 {
     gap: 50px;
   }
 
-  .about {
-    color: var(--color-red);
-  }
-
   .nav-link-item {
     font-weight: 600;
     font-size: 14px;
@@ -561,6 +592,10 @@ h1 {
     padding: 80px 142px;
   }
 
+  .otherPagesWrapper {
+    padding: 30px 142px;
+  }
+
   .h2-main-heading {
     font-size: 30px;
   }
@@ -576,7 +611,7 @@ h1 {
 
   /* ------------------------------------------Styling the Program Section------------------------------- */
   .programeCard-wrapper {
-    padding: 80px 142px;
+    padding: 20px 142px 60px 142px;
   }
 
   .program-articles {
@@ -590,8 +625,27 @@ h1 {
     justify-content: center;
   }
 
+  .programArticle:hover {
+    background-color: var(--color-black);
+    box-shadow: 2px 2px var(--color-gray);
+  }
+
   .programDescription {
     text-align: center;
+  }
+
+  .seeProgramLink {
+    display: block;
+  }
+
+  .seeProgramLink:hover {
+    color: var(--color-gray);
+    border-bottom: 1px solid var(--color-red);
+    text-decoration: none;
+  }
+
+  .buyTicketBtn {
+    display: none;
   }
 
   /* ---------------------------------------Styling the Artists Section----------------------------- */

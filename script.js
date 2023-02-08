@@ -35,24 +35,23 @@ for (let i = 0; i < navLinks.length; i += 1) {
 const artistsArray = [
   {
     id: 1,
-    artistImage: 'images/jah.jpg',
+    artistImage: 'images/jah.png',
     artistName: 'Jah Prayzah',
     bio: 'Award winning Zimbabwean artist',
     description: `Mukudzeyi Mukombe, better known as Jah Prayzah, is a Zimbabwean
-    contemporary musician and lead member of the band Third
-    Generation.`,
+    fine musician.`,
   },
   {
     id: 2,
-    artistImage: 'images/knoso2.jpg',
+    artistImage: 'images/knoso2.png',
     artistName: 'Nkosazana Daughter',
     bio: 'A fine South African Amapiano star ',
     description:
-      'She has been on the music leaderboard since 2022 with hits such as; Sofa Silahlane and Kuwe',
+      'She has been on top of the game since 2022 with hits such as; Sofa Silahlane and Kuwe',
   },
   {
     id: 3,
-    artistImage: 'images/burna2.jpg',
+    artistImage: 'images/burna2.png',
     artistName: 'Burna Boy',
     bio: 'Known as the African Giant',
     description:
@@ -60,36 +59,35 @@ const artistsArray = [
   },
   {
     id: 4,
-    artistImage: 'images/winky.jpg',
+    artistImage: 'images/winky.png',
     artistName: 'Winky D',
     bio: 'One of the finnest Zimbabwean artists',
     description:
-      'A Zimbabwean reggae-dancehall artist, known for his hits such as Green Like Me Garden and Mugarden',
+      'A dancehall artist, known for his hits such as Green Like Me Garden and Mugarden',
   },
   {
     id: 5,
-    artistImage: 'images/sauti.jpg',
+    artistImage: 'images/sauti.png',
     artistName: 'Sauti Sol',
     bio: 'A fine group from Nairobi, Kenya',
     description:
-      'Sauti Sol is a Kenyan band formed in Nairobi, Kenya, by vocalists Bien-Aime Baraza, Willis Chimano and Savara Mudigi',
+      'Sauti Sol is a Kenyan band formed in Nairobi, Kenya, by three vocalists.',
   },
   {
     id: 6,
-    artistImage: 'images/ross.jpg',
+    artistImage: 'images/ross.png',
     artistName: 'Ricky Ross',
     bio: 'Our main guest from USA',
     description:
-      'William Leonard Roberts II, known professionally as Rick Ross, is an American rapper, record executive, and former athlete',
+      'Rick Ross, is an American rapper, record executive, and former athlete',
   },
 ];
 
 const artistsCards = document.querySelector('.artistsCards');
-
-for (let i = 0; i < artistsArray.length; i += 1) {
-  const fetch = document.querySelector('.artistsCards').innerHTML;
-  artistsCards.innerHTML =
-    `
+if (window.innerWidth >= 768) {
+  for (let i = 0; i < artistsArray.length; i += 1) {
+    const fetch = document.querySelector('.artistsCards').innerHTML;
+    artistsCards.innerHTML = `
   <article class="artist">
             <img
               src=${artistsArray[i].artistImage}
@@ -103,5 +101,74 @@ for (let i = 0; i < artistsArray.length; i += 1) {
               <p class="artistDescription">${artistsArray[i].description}</p>
             </div>
           </article>
-  ` + fetch;
+  ${fetch}`;
+  }
+} else {
+  for (let i = 0; i < 2; i += 1) {
+    const fetch = document.querySelector('.artistsCards').innerHTML;
+    artistsCards.innerHTML = `
+  <article class="artist">
+            <img
+              src=${artistsArray[i].artistImage}
+              alt="Picture of Jah Prayzah perfoming live"
+              class="artistImage"
+            />
+            <div class="artistTextContent">
+              <h3 class="artistName">${artistsArray[i].artistName}</h3>
+              <p class="artistBio">${artistsArray[i].bio}</p>
+              <hr class="artistHr" />
+              <p class="artistDescription">${artistsArray[i].description}</p>
+            </div>
+          </article>
+  ${fetch}`;
+  }
 }
+
+const seeMoreArtistBtn = document.querySelector('.moreArtistsLink');
+const seeLessArtistBtn = document.querySelector('.lessArtistsLink');
+seeMoreArtistBtn.addEventListener('click', () => {
+  seeMoreArtistBtn.classList.add('hide');
+  seeLessArtistBtn.classList.remove('hide');
+  for (let i = 2; i < artistsArray.length; i += 1) {
+    const fetch = document.querySelector('.artistsCards').innerHTML;
+    artistsCards.innerHTML = `
+  <article class="artist">
+            <img
+              src=${artistsArray[i].artistImage}
+              alt="Picture of Jah Prayzah perfoming live"
+              class="artistImage"
+            />
+            <div class="artistTextContent">
+              <h3 class="artistName">${artistsArray[i].artistName}</h3>
+              <p class="artistBio">${artistsArray[i].bio}</p>
+              <hr class="artistHr" />
+              <p class="artistDescription">${artistsArray[i].description}</p>
+            </div>
+          </article>
+  ${fetch}`;
+  }
+});
+
+seeLessArtistBtn.addEventListener('click', () => {
+  seeMoreArtistBtn.classList.remove('hide');
+  seeLessArtistBtn.classList.add('hide');
+  artistsCards.innerHTML = '';
+  for (let i = 0; i < 2; i += 1) {
+    const fetch = document.querySelector('.artistsCards').innerHTML;
+    artistsCards.innerHTML = `
+  <article class="artist">
+            <img
+              src=${artistsArray[i].artistImage}
+              alt="Picture of Jah Prayzah perfoming live"
+              class="artistImage"
+            />
+            <div class="artistTextContent">
+              <h3 class="artistName">${artistsArray[i].artistName}</h3>
+              <p class="artistBio">${artistsArray[i].bio}</p>
+              <hr class="artistHr" />
+              <p class="artistDescription">${artistsArray[i].description}</p>
+            </div>
+          </article>
+  ${fetch}`;
+  }
+});
